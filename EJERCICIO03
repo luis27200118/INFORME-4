@@ -1,0 +1,10 @@
+lista_M=[]
+def rellenar(n):
+    tamaño = int(input("De que tamaño desea la lista? :"))
+    for i in range(tamaño):
+        lista_M.append((i+1)*n)
+    presentar(n)
+def presentar(n):
+    print("Multiplos de un número:",n)
+    print(lista_M)
+rellenar(int(input("Escoja un número del cual desee ver la lista de múltiplos:")))
